@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selected work by Shaswat Gupta, AI Data Analyst — RAG analytics, ML models, data pipelines, and dashboards." />
+  <title>Work — Shaswat Gupta, AI Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="work">
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__logo">S.</span>
+      <span class="nav__name">Shaswat Gupta</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="#projects" data-scroll class="active">Work</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="nav__theme" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <p class="hero__eyebrow"><span class="dot"></span> Selected projects</p>
+        <h1 class="page-hero__title">
+          The <span class="grad">work</span>.
+        </h1>
+        <p class="page-hero__lead">
+          A closer look at the systems I've built — what they do, what went into them, and the stack behind each one.
+        </p>
+      </div>
+      <div class="floating-3d" aria-hidden="true">
+        <div class="cube">
+          <div class="cube__face cube__face--front"></div>
+          <div class="cube__face cube__face--back"></div>
+          <div class="cube__face cube__face--right"></div>
+          <div class="cube__face cube__face--left"></div>
+          <div class="cube__face cube__face--top"></div>
+          <div class="cube__face cube__face--bottom"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="projects">
+
+        <article class="project tilt" data-tilt data-tilt-max="6" id="rag">
+          <div class="tilt__shine"></div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="project__num">01</span>
+              <span class="project__tag">AI · RAG</span>
+            </div>
+            <h2>RAG model for data analysis</h2>
+            <p class="project__lead">
+              A retrieval-augmented generation system that lets analysts ask natural-language questions
+              against a body of documents and structured data, with answers grounded in the actual source material.
+            </p>
+            <div class="project__grid">
+              <div>
+                <h4>What it does</h4>
+                <p>Indexes documents and datasets into a vector store, retrieves relevant chunks for any given question, and feeds them to an LLM to produce a grounded, citable answer.</p>
+              </div>
+              <div>
+                <h4>Why it matters</h4>
+                <p>Removes the hunt-and-peck stage of analysis. Stakeholders get answers from the data without needing to write queries or wait for a report.</p>
+              </div>
+            </div>
+            <ul class="project__stack">
+              <li>Python</li><li>RAG</li><li>LLMs</li><li>Vector DB</li><li>Embeddings</li>
+            </ul>
+          </div>
+          <div class="project__media" data-kind="rag">
+            <img src="assets/projects/rag.png" alt="RAG architecture screenshot" onerror="this.remove()" />
+            <svg class="project__placeholder" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="currentColor" stop-opacity="0.14"/>
+                  <stop offset="100%" stop-color="currentColor" stop-opacity="0.02"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="260" fill="url(#g1)" rx="10"/>
+              <g stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.65">
+                <line x1="80" y1="130" x2="160" y2="80"/>
+                <line x1="80" y1="130" x2="160" y2="130"/>
+                <line x1="80" y1="130" x2="160" y2="180"/>
+                <line x1="180" y1="80" x2="260" y2="130"/>
+                <line x1="180" y1="130" x2="260" y2="130"/>
+                <line x1="180" y1="180" x2="260" y2="130"/>
+                <line x1="280" y1="130" x2="340" y2="130"/>
+              </g>
+              <g fill="currentColor">
+                <circle cx="80" cy="130" r="10" opacity="0.9"/>
+                <circle cx="170" cy="80" r="7" opacity="0.7"/>
+                <circle cx="170" cy="130" r="7" opacity="0.7"/>
+                <circle cx="170" cy="180" r="7" opacity="0.7"/>
+                <circle cx="270" cy="130" r="10" opacity="0.9"/>
+                <circle cx="345" cy="130" r="6" opacity="0.6"/>
+              </g>
+              <g font-family="monospace" font-size="10" fill="currentColor" opacity="0.6">
+                <text x="62" y="160">query</text>
+                <text x="250" y="160">LLM</text>
+                <text x="325" y="160">answer</text>
+              </g>
+            </svg>
+            <span class="project__media-label">Add <code>assets/projects/rag.png</code> to replace this placeholder</span>
+          </div>
+        </article>
+
+        <article class="project tilt" data-tilt data-tilt-max="6" id="pipeline">
+          <div class="tilt__shine"></div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="project__num">02</span>
+              <span class="project__tag">Pipeline · Cloud</span>
+            </div>
+            <h2>Automated data pipeline</h2>
+            <p class="project__lead">
+              An end-to-end pipeline that moves data from source systems into the analytics layer on a schedule,
+              with validation and logging so broken data fails fast instead of polluting downstream reports.
+            </p>
+            <div class="project__grid">
+              <div>
+                <h4>What it does</h4>
+                <p>Orchestrates scheduled jobs on Azure / Databricks — ingest, clean, transform, validate, and load — with structured logs at every stage.</p>
+              </div>
+              <div>
+                <h4>Why it matters</h4>
+                <p>Replaces manual refreshes. Data is ready when analysts open their dashboards, and issues surface before they reach stakeholders.</p>
+              </div>
+            </div>
+            <ul class="project__stack">
+              <li>Azure</li><li>Databricks</li><li>Python</li><li>SQL</li>
+            </ul>
+          </div>
+          <div class="project__media" data-kind="pipeline">
+            <img src="assets/projects/pipeline.png" alt="Data pipeline diagram" onerror="this.remove()" />
+            <svg class="project__placeholder" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="260" fill="url(#g1)" rx="10"/>
+              <defs>
+                <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="currentColor" stop-opacity="0.14"/>
+                  <stop offset="100%" stop-color="currentColor" stop-opacity="0.02"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="260" fill="url(#g2)" rx="10"/>
+              <g fill="none" stroke="currentColor" stroke-width="1.3" opacity="0.7">
+                <rect x="40"  y="110" width="60" height="40" rx="4"/>
+                <rect x="135" y="110" width="60" height="40" rx="4"/>
+                <rect x="230" y="110" width="60" height="40" rx="4"/>
+                <rect x="325" y="110" width="50" height="40" rx="4"/>
+                <line x1="100" y1="130" x2="135" y2="130" marker-end="url(#arr)"/>
+                <line x1="195" y1="130" x2="230" y2="130" marker-end="url(#arr)"/>
+                <line x1="290" y1="130" x2="325" y2="130" marker-end="url(#arr)"/>
+              </g>
+              <defs>
+                <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                  <path d="M0,0 L6,3 L0,6" fill="currentColor" opacity="0.7"/>
+                </marker>
+              </defs>
+              <g font-family="monospace" font-size="10" fill="currentColor" opacity="0.75" text-anchor="middle">
+                <text x="70"  y="135">source</text>
+                <text x="165" y="135">clean</text>
+                <text x="260" y="135">transform</text>
+                <text x="350" y="135">load</text>
+              </g>
+              <g fill="currentColor" opacity="0.25">
+                <rect x="40" y="50" width="335" height="4" rx="2"/>
+                <rect x="40" y="60" width="210" height="4" rx="2"/>
+                <rect x="40" y="196" width="280" height="4" rx="2"/>
+                <rect x="40" y="206" width="170" height="4" rx="2"/>
+              </g>
+            </svg>
+            <span class="project__media-label">Add <code>assets/projects/pipeline.png</code> to replace this placeholder</span>
+          </div>
+        </article>
+
+        <article class="project tilt" data-tilt data-tilt-max="6" id="automation">
+          <div class="tilt__shine"></div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="project__num">03</span>
+              <span class="project__tag">Automation</span>
+            </div>
+            <h2>Python automation scripts</h2>
+            <p class="project__lead">
+              A set of Python scripts that automate recurring data analysis work —
+              pulling data, cleaning, transforming, and producing outputs without anyone pressing "run".
+            </p>
+            <div class="project__grid">
+              <div>
+                <h4>What it does</h4>
+                <p>Handles repetitive data pulls, joins, reconciliations, and formatted outputs. Runs on a schedule and drops results where stakeholders expect them.</p>
+              </div>
+              <div>
+                <h4>Why it matters</h4>
+                <p>Frees up hours each week for actual analysis — fewer mistakes, consistent outputs, and a reliable trail of what ran when.</p>
+              </div>
+            </div>
+            <ul class="project__stack">
+              <li>Python</li><li>Pandas</li><li>SQL</li>
+            </ul>
+          </div>
+          <div class="project__media" data-kind="automation">
+            <img src="assets/projects/automation.png" alt="Automation script output" onerror="this.remove()" />
+            <svg class="project__placeholder" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="260" fill="url(#g1)" rx="10"/>
+              <g font-family="monospace" font-size="11" fill="currentColor">
+                <text x="30" y="50"  opacity="0.7">$ python  run_report.py</text>
+                <text x="30" y="75"  opacity="0.45">› loading source · 2,481 rows</text>
+                <text x="30" y="95"  opacity="0.45">› cleaning · nulls handled</text>
+                <text x="30" y="115" opacity="0.45">› transform · joins ok</text>
+                <text x="30" y="135" opacity="0.45">› writing report.xlsx</text>
+                <text x="30" y="160" opacity="0.9">✓ done in 3.2s</text>
+                <text x="30" y="195" opacity="0.6">cron: 0 7 * * MON</text>
+              </g>
+              <g stroke="currentColor" stroke-width="1" opacity="0.2">
+                <line x1="0" y1="225" x2="400" y2="225"/>
+              </g>
+            </svg>
+            <span class="project__media-label">Add <code>assets/projects/automation.png</code> to replace this placeholder</span>
+          </div>
+        </article>
+
+        <article class="project tilt" data-tilt data-tilt-max="6" id="dashboards">
+          <div class="tilt__shine"></div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="project__num">04</span>
+              <span class="project__tag">BI · Dashboards</span>
+            </div>
+            <h2>Insight dashboards</h2>
+            <p class="project__lead">
+              Power BI and Tableau dashboards built for the people who actually use them —
+              clarity first, dressed-up visuals second.
+            </p>
+            <div class="project__grid">
+              <div>
+                <h4>What it does</h4>
+                <p>Surfaces the metrics stakeholders act on, with drill-downs where they matter and filtering that matches how the team thinks about the data.</p>
+              </div>
+              <div>
+                <h4>Why it matters</h4>
+                <p>A dashboard is only useful if people open it. These are designed around real questions, not just "what data do we have".</p>
+              </div>
+            </div>
+            <ul class="project__stack">
+              <li>Power BI</li><li>Tableau</li><li>SQL</li><li>Excel</li>
+            </ul>
+          </div>
+          <div class="project__media" data-kind="dashboards">
+            <img src="assets/projects/dashboards.png" alt="Dashboard screenshot" onerror="this.remove()" />
+            <svg class="project__placeholder" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="400" height="260" fill="url(#g1)" rx="10"/>
+              <g fill="currentColor" opacity="0.18">
+                <rect x="30"  y="30" width="110" height="60" rx="4"/>
+                <rect x="150" y="30" width="110" height="60" rx="4"/>
+                <rect x="270" y="30" width="100" height="60" rx="4"/>
+              </g>
+              <g fill="currentColor" opacity="0.7" font-family="monospace" font-size="10">
+                <text x="40"  y="55">revenue</text>
+                <text x="160" y="55">users</text>
+                <text x="280" y="55">churn</text>
+              </g>
+              <g fill="currentColor" opacity="0.9" font-family="Inter, sans-serif" font-size="18" font-weight="700">
+                <text x="40"  y="80">$1.24M</text>
+                <text x="160" y="80">12.4k</text>
+                <text x="280" y="80">2.1%</text>
+              </g>
+              <g fill="currentColor" opacity="0.25">
+                <rect x="30"  y="110" width="40" height="120" rx="2"/>
+                <rect x="78"  y="140" width="40" height="90"  rx="2"/>
+                <rect x="126" y="125" width="40" height="105" rx="2"/>
+                <rect x="174" y="160" width="40" height="70"  rx="2"/>
+                <rect x="222" y="132" width="40" height="98"  rx="2"/>
+                <rect x="270" y="148" width="40" height="82"  rx="2"/>
+                <rect x="318" y="118" width="40" height="112" rx="2"/>
+              </g>
+              <path d="M30 215 Q 100 180 160 200 T 290 170 T 370 190" stroke="currentColor" stroke-width="2" fill="none" opacity="0.85"/>
+            </svg>
+            <span class="project__media-label">Add <code>assets/projects/dashboards.png</code> to replace this placeholder</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--cta">
+      <div class="cta">
+        <h2>Have a project in mind?</h2>
+        <p>Freelance work or a full-time role — let's talk.</p>
+        <div class="cta__row">
+          <a class="btn btn--primary" href="index.html#contact">Start a conversation</a>
+          <a class="btn btn--ghost" href="mailto:guptashaswat99@gmail.com">guptashaswat99@gmail.com</a>
+        </div>
+        <div class="socials socials--center" aria-label="Social links">
+          <a class="social" href="https://www.linkedin.com/in/shaswat-gupta/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.34 0h4.37v1.92h.06c.61-1.15 2.1-2.36 4.33-2.36 4.63 0 5.48 3.05 5.48 7.02V22h-4.56v-6.22c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.61-2.38 3.27V22H7.56V8z"/></svg>
+          </a>
+          <a class="social" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.61 8.21 11.17.6.11.82-.26.82-.57 0-.28-.01-1.02-.02-2.01-3.34.72-4.04-1.6-4.04-1.6-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.8 2.8 1.28 3.49.98.11-.77.42-1.28.76-1.58-2.67-.3-5.47-1.31-5.47-5.85 0-1.29.47-2.35 1.23-3.18-.12-.3-.53-1.51.12-3.15 0 0 1-.32 3.3 1.21A11.6 11.6 0 0 1 12 6.8c1.02 0 2.04.14 3 .4 2.29-1.53 3.29-1.21 3.29-1.21.66 1.64.25 2.85.12 3.15.77.83 1.23 1.89 1.23 3.18 0 4.55-2.81 5.55-5.49 5.84.43.36.81 1.08.81 2.18 0 1.58-.01 2.85-.01 3.24 0 .31.22.69.82.57C20.57 21.9 24 17.49 24 12.29 24 5.78 18.63.5 12 .5z"/></svg>
+          </a>
+          <a class="social" href="https://public.tableau.com/" target="_blank" rel="noopener" aria-label="Tableau Public">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.5 0v3.5H8V5h3.5v3.5h1V5H16V3.5h-3.5V0h-1zm-6 6v2h-3v1h3v2h1V9h3V8h-3V6h-1zm13 0v2h-3v1h3v2h1V9h3V8h-3V6h-1zM11 12v4H7v1h4v4h1v-4h4v-1h-4v-4h-1zm-8 3v2H0v1h3v2h1v-2h3v-1H4v-2H3zm18 0v2h-3v1h3v2h1v-2h3v-1h-3v-2h-1z"/></svg>
+          </a>
+          <a class="social" href="mailto:guptashaswat99@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="year"></span> Shaswat Gupta — AI Data Analyst. Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <script type="importmap">
+    { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+  </script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
